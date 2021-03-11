@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-image: url('../../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.header h1{
+    font-size: 44px;
+    color: white;
+}
+
+.leagueContainer{
+    padding: 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items: center;  
+}
+
+@media (max-width: 668px) {
+    .leagueContainer{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(min-width: 668px) and (max-width: 992px) {
+    .leagueContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
